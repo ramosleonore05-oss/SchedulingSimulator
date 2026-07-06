@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f4f7fb, #eaf2ff);
+    color: #1f2a44;
+}
+
+.app-shell {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 20px 48px;
+}
+
+.hero {
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    margin: 0 0 8px;
+    color: #16324f;
+    font-size: 2rem;
+}
+
+.hero p {
+    margin: 0;
+    color: #4d5f78;
+    font-size: 1rem;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: minmax(280px, 400px) 1fr;
+    gap: 24px;
+}
+
+.panel {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: 600;
+    color: #31445f;
+}
+
+textarea,
+select,
+input,
+button {
+    font: inherit;
+    border-radius: 10px;
+    border: 1px solid #d8e1ee;
+    padding: 10px 12px;
+}
+
+button {
+    margin-top: 6px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 12px;
+}
+
+.process-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.process-table th,
+.process-table td {
+    padding: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.process-table th {
+    background: #f8fafc;
+    color: #334155;
+}
+
+/* Priority column visibility toggled by adding/removing this class on the table element */
+.process-table .priority-column { display: table-cell; }
+.process-table.hide-priority .priority-column { display: none; }
+
+.process-table input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.quantum-field,
+.priority-order-field {
+    display: none;
+}
+
+.quantum-field.is-visible,
+.priority-order-field.is-visible {
+    display: block;
+}
+
+.secondary-btn {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+
+.secondary-btn:hover {
+    background: #cbd5e1;
+}
+
+.icon-btn {
+    padding: 6px 10px;
+    margin-top: 0;
+    background: #ef4444;
+}
+
+.icon-btn:hover {
+    background: #dc2626;
+}
+
+.message {
+    margin-top: 14px;
+    padding: 12px 14px;
+    background: #fff7ed;
+    color: #9a2c00;
+    border-left: 4px solid #f59e0b;
+    border-radius: 8px;
+}
+
+.results img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 12px 0;
+}
+
+.metrics {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 12px 0 16px;
+}
+
+.metrics div {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 10px 12px;
+    min-width: 180px;
+}
+
+.metrics strong,
+.metrics span {
+    display: block;
+}
+
+.metrics span {
+    margin-top: 4px;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 10px 8px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #2563eb;
+    color: white;
+}
+
+.empty-state {
+    padding: 26px 0;
+    color: #475569;
+}
+
+@media (max-width: 860px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+}
